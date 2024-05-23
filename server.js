@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 // Routes
-app.use('/api/users', userRoutes);
+app.use('/users', userRoutes);
 app.use('/api/image', imageRoutes);
 app.use('/api/product', productRoutes);
 app.use('/api/stripe', stripeRoutes);
