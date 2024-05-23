@@ -21,6 +21,10 @@ app.use(cors());
 // Connect to MongoDB
 connectDB();
 
+app.get('/', (req, res) => {
+    res.send('products api running new deploy');
+});
+
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/image', imageRoutes);
